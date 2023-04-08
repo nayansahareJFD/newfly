@@ -1,0 +1,13 @@
+<hibernate-mapping package="com.simplilearn.demo">
+<class name="FlightDetails" table="flightdetails">
+<id name="id" type="long" column="id">
+<generator class="increment"/>
+</id>
+<property name="source" column="source" type="string"/>
+<property name="destination" column="destination" type="string"/>
+<property name="airline" column="airline" type="string"/>
+<property name="time" column="time" type="string"/>
+<property name="price" column="price" type="big_decimal"/>
+<property name="date" column="date" type="string"/>
+</class>
+</hibernate-mapping>
